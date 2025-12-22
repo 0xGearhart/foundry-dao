@@ -4,7 +4,7 @@ import {Ownable} from "@openzeppelin/contracts/access/Ownable.sol";
 
 pragma solidity ^0.8.27;
 
-contract SimpleStorage is Ownable {
+contract DaoStorage is Ownable {
     uint256 private s_number;
 
     event NumberChanged(uint256 indexed newNumber);
