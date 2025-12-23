@@ -34,13 +34,17 @@ contract DaoGovernor is
     //////////////////////////////////////////////////////////////*/
     constructor(
         string memory name,
+        uint48 votingDelay,
+        uint32 votingPeriod,
+        uint256 votingThreshold,
+        uint256 quorumNumeratorValue,
         IVotes token,
         TimelockController timelock
     )
         Governor(name)
-        GovernorSettings(1 days, 1 weeks, 0)
+        GovernorSettings(votingDelay, votingPeriod, votingThreshold)
         GovernorVotes(token)
-        GovernorVotesQuorumFraction(10)
+        GovernorVotesQuorumFraction(quorumNumeratorValue)
         GovernorTimelockControl(timelock)
     {}
 
