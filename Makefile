@@ -1,6 +1,6 @@
 -include .env
 
-.PHONY: all clean remove install update snapshot coverageReport gasReport anvil deploy submitProposal delegate vote executeProposal
+.PHONY: all clean remove install update snapshot coverageReport gasReport anvil deploy submitProposal delegate vote queueProposal executeProposal
 
 DEFAULT_ANVIL_KEY := 0xac0974bec39a17e36ba4a6b4d238ff944bacb478cbed5efcae784d7bf4f2ff80
 
@@ -49,14 +49,17 @@ endif
 deploy:
 	@forge script script/DeployDao.s.sol:DeployDao $(NETWORK_ARGS)
 
-submitProposal:
-	@ forge script script/Interactions.s.sol:SubmitProposal $(NETWORK_ARGS)
-
 delegate:
 	@ forge script script/Interactions.s.sol:Delegate $(NETWORK_ARGS)
 
+submitProposal:
+	@ forge script script/Interactions.s.sol:SubmitProposal $(NETWORK_ARGS)
+
 vote:
 	@ forge script script/Interactions.s.sol:Vote $(NETWORK_ARGS)
+
+queueProposal:
+	@ forge script script/Interactions.s.sol:QueueProposal $(NETWORK_ARGS)
 
 executeProposal:
 	@ forge script script/Interactions.s.sol:ExecuteProposal $(NETWORK_ARGS)
