@@ -16,7 +16,7 @@ import {IVotes} from "@openzeppelin/contracts/governance/utils/IVotes.sol";
 
 /**
  * @title DaoGovernor
- * @author Dustin Gearhart
+ * @author Gearhart
  * @notice Main contract to facilitate governance and voting based on ERC20 DaoToken balance snapshots.
  * @dev Compatible with OpenZeppelin Contracts ^5.5.0
  */

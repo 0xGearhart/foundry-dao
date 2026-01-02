@@ -6,7 +6,7 @@ pragma solidity ^0.8.27;
 
 /**
  * @title DaoStorage
- * @author Dustin Gearhart
+ * @author Gearhart
  * @notice Simple storage contract to be owned and governed by the DAO.
  * @dev Needs to be owned by DaoTimeLock contract to prevent the DAO from executing proposals without minimum delay.
  */

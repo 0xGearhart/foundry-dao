@@ -6,7 +6,7 @@ import {TimelockController} from "@openzeppelin/contracts/governance/TimelockCon
 
 /**
  * @title DaoTimeLock
- * @author Dustin Gearhart
+ * @author Gearhart
  * @notice Time lock contract to ensure a minimum amount of time passes before any successful proposal is executed.
  * This allows unsatisfied holders sufficient time to leave the DAO before proposal execution. Ensures all
  * proposals are sent from the DAO. Permits any address to execute valid proposals after required delay has passed.

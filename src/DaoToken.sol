@@ -9,7 +9,7 @@ import {Nonces} from "@openzeppelin/contracts/utils/Nonces.sol";
 
 /**
  * @title DaoToken
- * @author Dustin Gearhart
+ * @author Gearhart
  * @notice ERC20 token with permit and votes extensions to enable snapshots of voting power that will be used in DAO governance
  * @dev Compatible with OpenZeppelin Contracts ^5.5.0
  */
